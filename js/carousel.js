@@ -1,27 +1,26 @@
+var images = ["photos/front.jpg","photos/cheese-one.jpg", "photos/grocery-five.jpg",
+"photos/grocery-six.jpg", "photos/got-cheese.jpg","photos/grocery-one.jpg","photos/grocery-five.jpg",
+"photos/history-one.jpg","photos/jessie-one.jpg","photos/grocery-one.jpg","photos/sub-one.jpg",
+"photos/sub-two.jpg","photos/sub-three.jpg","photos/sub-four.jpg","photos/sub-five.jpg"];
 
+var img = document.getElementById("slider-img");
+img.setAttribute("src", images[0])
 
+var total = images.length;
+var imagecounter = 0;
 
-var pics = ["photos/cheese-one.jpg", "photos/front.jpg"]
+function slider () {
 
-var gallery = 0;
+  if (imagecounter <= total) {
+    imagecounter++;
+  }
 
-var clickCount = 0;
+  if (imagecounter == total) {
+    imagecounter = 0;
+  }
 
-$(document).ready(function() {
-  $("#forward").on("click", function() {
-    gallery += 1;
-    if (gallery == pics.length) {
-      gallery = 0;
-    }
+document.getElementById("slider-img");
+img.setAttribute("src", images[imagecounter]);
+}
 
-    $("#pics").attr("src", pics[gallery])
-  });
-
-  $("#back").on("click", function() {
-    gallery -= 1;
-    if (gallery == pics.length <= 0) {
-      gallery = 8;
-    }
-    $("#pics").attr("src", pics[gallery])
-  });
-});
+setInterval(slider, 3000)

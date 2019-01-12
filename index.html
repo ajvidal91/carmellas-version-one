@@ -5,7 +5,7 @@
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
+	<link rel="shortcut icon" href="photos/logo.jpg">
 	<!-- Author Meta -->
 	<meta name="author" content="colorlib">
 	<!-- Meta Description -->
@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Bakery</title>
+	<title>Carmella's Market</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 	<!--
@@ -30,6 +30,7 @@
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -43,8 +44,8 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
-						<a class="btns" href="tel:617-567-6373">617-567-6373</a>
-						<a class="btns" href="email:mailto:carmellasmarket@verizon.net">carmellasmarket@verizon.net</a>
+						<a style="font-size: 30px; position: relative" class="btns" href="tel:617-567-6373">617-567-6373</a>
+						<a style="font-size: 25px;"class="btns" href="email:mailto:carmellasmarket@verizon.net">carmellasmarket@verizon.net</a>
 						<a class="icons" href="tel:617-567-6373">
 				  					<span class="lnr lnr-phone-handset"></span>
 				  				</a>
@@ -77,15 +78,13 @@
 		<div class="container">
 			<div class="row fullscreen d-flex justify-content-center align-items-center">
 				<div class="banner-content col-lg-10 col-md-12 justify-content-center">
-					<h6 class="text-uppercase">Carmella's Market, we start with our heart</h6>
-					<h1>
-								Love with every slice
-							</h1>
-					<p class="text-white mx-auto">
 
-					</p>
-					<a href="menu.html" class="primary-btn squire text-uppercase mt-10">Check Our Menu</a>
+
+
+
 				</div>
+				<a style="font-size: 45px; color: white;" class="btns" href="tel:617-567-6373">617-567-6373 |</a>
+				<a style="font-size: 45px; color: white;" class="btns" href="email:mailto:carmellasmarket@verizon.net">carmellasmarket@verizon.net</a>
 			</div>
 		</div>
 	</section>
@@ -108,7 +107,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore
 						magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
 					</p>
-					<a class="primary-btn squire mx-auto mt-20" href="#">Get Started Now</a>
+					<a class="primary-btn squire mx-auto mt-20" href="menu.html">Get Started Now</a>
 				</div>
 			</div>
 		</div>
@@ -157,7 +156,7 @@
 						<a href="#"><h4>Grocery</h4></a>
 					</div>
 				</div>
-				<a class="primary-btn mx-auto mt-80" href="#">View Full Menu</a>
+				<a class="primary-btn mx-auto mt-80" href="menu.html">View Full Menu</a>
 			</div>
 		</div>
 	</section>
@@ -175,9 +174,30 @@
 							</h1>
 					<a class="primary-btn" href="https://www.yelp.com/biz/carmellas-market-boston">Click to review</a>
 				</div>
-				<div class="col-lg-6 justify-content-center align-items-center d-flex">
-					<img class="img-fluid mx-auto" src="photos/got-cheese.jpg" alt="">
-				</div>
+                <!-- carousel -->
+
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="photos/grocery-one.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="photos/grocery-two.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="photos/grocery-three.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
 			</div>
 		</div>
 	</section>
@@ -234,7 +254,7 @@
 		</div>
 	</footer>
 	<!-- End footer Area -->
-
+	<script src="js/carousel.js" type="text/javascript"></script>
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
