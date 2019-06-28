@@ -1,0 +1,38 @@
+.main-menu {
+    all: unset;
+    text-align: center;
+}
+
+#nav-menu-container {
+    margin: 0 auto;
+}
+
+.nav-menu a {
+    color: white;
+    font-size: 2em;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#header {
+    position: absolute;
+}
+
+.icons {
+
+}
+
+h6.text-uppercase {
+    color: black;
+}
+
+.footer-area {
+    background: white;
+}
+
+.fb-icon {
+    font-size: 2.5em;
+}
