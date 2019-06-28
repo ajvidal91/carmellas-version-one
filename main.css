@@ -36,3 +36,45 @@ h6.text-uppercase {
 .fb-icon {
     font-size: 2.5em;
 }
+
+.mobile-only {
+    display: none;
+}
+
+.section-gap {
+    padding: 20px !important;
+}
+
+.pipe {
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+    .banner-area {
+        background-size: contain;
+        background-color: #f9f9ff;
+        background-repeat: no-repeat;
+    }
+
+    .banner-area .overlay-bg {
+        background: unset;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .mobile-number {
+        color: #777;
+        text-decoration: underline;
+    }
+
+    .mobile-header {
+        font-size:15px;
+    }
+
+    .section-gap {
+        padding: 20px 0 !important;
+    }
+}
