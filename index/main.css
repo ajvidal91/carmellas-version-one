@@ -73,11 +73,19 @@ h6.text-uppercase {
 #mobile-carousel {
     display: none;
 }
+
+/* .banner-content {
+    background-size: contain;
+    background-color: #f9f9ff;
+    background-repeat: no-repeat;
+    background-image: url("photos/logo.jpg");
+} */
 @media only screen and (max-width: 768px) {
     .banner-area {
         background-size: contain;
         background-color: #f9f9ff;
         background-repeat: no-repeat;
+        background-image: url("photos/logo.jpg");
     }
     #mobile-carousel {
         display: block;
