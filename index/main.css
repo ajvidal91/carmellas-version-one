@@ -50,11 +50,41 @@ h6.text-uppercase {
     font-weight: 900;
     font-size: 15px;
 }
+
+.section-gap {
+    padding: 20px 64px !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.w-100 {
+    width: 80% !important;
+    height: 700px;
+    margin: 0 auto !important;
+}
+
+#mobile-carousel {
+    display: none;
+}
 @media only screen and (max-width: 768px) {
     .banner-area {
         background-size: contain;
         background-color: #f9f9ff;
         background-repeat: no-repeat;
+    }
+    #mobile-carousel {
+        display: block;
+    }
+
+    #desktop-carousel {
+        display: none;
     }
 
     .banner-area .overlay-bg {
